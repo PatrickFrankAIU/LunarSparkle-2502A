@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000a20;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+h1{
+    font-size: 32px;
+    font-family: helvetica, arial, sans-serif;
+    color: #feebd1;
+    background-color: #000a20;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5px 0 5px 0;
+}
+h2{
+    font-size: 26px;
+    font-family: helvetica, arial, sans-serif;
+    color: #feebd1;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: underline;
+}
+h3{
+    font-size: 20px;
+    font-family: helvetica, arial, sans-serif;
+    color: #feebd1;
+}
+p{
+    font-size: 16px;
+    font-family: helvetica, arial, sans-serif;
+    color: #7c9bc3;
+}
+img {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.centered-figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.8em; /* Adjust as needed */
+    font-style: italic;
+}
+
+header {
+    background-color: #f3f4f6;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #f3f4f6;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social {
+    width: 30%;
+}
+
+img.team {
+    max-width: 300px;
+}
+.navigation:hover{
+    background-color: #000a20;
+    border-radius: 3px;
+    padding: 5px;
+}
+.navigation > a:hover{
+    color: #7c9bc3;
+    text-decoration: underline;
+}
+.pageLinks{
+    background-color:#7c9bc3;
+    height: 100%;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.productCard{
+    flex: 1 1 300px;
+    margin: 10px;
+    border: 1px solid #7c9bc3;
+    border-radius: 5px;
+    padding:20px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.productCard p{
+    font-weight: bold;
+}
+
