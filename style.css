@@ -171,5 +171,7 @@ img.team {
     color: white;
     font-size: 16px;
     padding: 5px 15px;
-
+}.emailLink {
+    text-decoration: none;
+    color: white;
 }
