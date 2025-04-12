@@ -10,7 +10,7 @@ h1 {
     font-family: 'Merriweather';
     color: #feebd1;
     /* background-color: #000a20; */
-    background: radial-gradient(circle,  #000a20 60%, #7c9bc3 100%);
+    background: radial-gradient(circle, #000a20 60%, #7c9bc3 100%);
     text-align: center;
     border-radius: 30px;
     padding: 5px 0 5px 0;
@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #f3f4f6;
+    background-color: rgb(197, 193, 193);
     text-align: center;
     padding: 10px;
     width: 100%;
@@ -99,6 +99,7 @@ footer {
 img.team {
     max-width: 300px;
 }
+
 .navigation {
     transition: transform 0.15s ease;
 }
@@ -109,7 +110,7 @@ img.team {
 
 .pageLinks {
     /* background-color: #7c9bc3;*/
-    background: radial-gradient(circle, #7c9bc3 10%,  #000a20 100%);
+    background: radial-gradient(circle, #7c9bc3 10%, #000a20 100%);
     height: 100%;
     padding: 5px 0 5px 0;
     border-radius: 5px;
@@ -212,6 +213,7 @@ img.team {
     width: 20%;
     height: auto;
 }
+
 .homeJewelryContainer {
     display: flex;
     height: 400px;
@@ -220,6 +222,7 @@ img.team {
 
 .homeJewelry {
     transform: scale(3);
+    border: 2px solid black;
 }
 
 /* MEDIA QUERY */
@@ -239,10 +242,94 @@ img.team {
         display: block;
         margin: 10px 0;
     }
+
     .homeJewelryContainer {
         padding: 20px;
     }
+
     .homeJewelry {
         transform: scale(1.5);
     }
+}
+
+/* Dark mode toggle */
+.sliderDark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    width: 300px;
+    background-color: rgb(95, 95, 232);
+    padding: 0 10px;
+    border: 2px solid black;
+}
+.sliderDark p {
+    color: white;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+
+}
+
+body.darkMode {
+    background-color: white;
+    color: black;
+
+}
+body.darkMode header {
+    background-color: rgb(222, 215, 215);
+    border-bottom: 1px solid #444;
+}
+body.darkMode h2 {
+    color: black;
+}
+body.darkMode .headshotCard p {
+    color: black;
+}
+body.darkMode footer {
+    background-color: #f7f8fb;
 }
